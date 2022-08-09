@@ -27,8 +27,6 @@ public class Profesional {
     @JoinColumn(name = "usuario_id_usuario", insertable = false, updatable = false)
     private Usuario usuario;
 
-
-
     public Profesional() {
     }
 
