@@ -22,4 +22,8 @@ public class ClienteService {
     public Cliente save(Cliente cliente){
         return repository.save(cliente);
     }
+
+    public Cliente getOneByIdUsuario(int usuarioId){
+        return repository.getOneByUsuario(usuarioId);
+    }
 }

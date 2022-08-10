@@ -22,4 +22,8 @@ public class AdministrativoService {
     public Administrativo save(Administrativo administrativo){
         return repository.save(administrativo);
     }
+
+    public Administrativo getOneByIdUsuario(int usuarioId){
+        return repository.getOneByIdUsuario(usuarioId);
+    }
 }

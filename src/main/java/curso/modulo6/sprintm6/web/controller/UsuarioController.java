@@ -58,7 +58,6 @@ public class UsuarioController {
                                   @RequestParam(name = "idAdm", defaultValue = "0") int idAdm, @RequestParam("area") String area, @RequestParam("experiencia") String experiencia){
 
         Usuario usuario = new Usuario();
-
         usuario.setUsuarioId(id);
         usuario.setUsuarioNombre(nombre);
         usuario.setUsuarioFechaNac(fecha);

@@ -34,4 +34,10 @@ public class ProfesionalRepository {
     public void delete(int profesionalId){
         crudRepository.deleteById(profesionalId);
     }
+    /*public Profesional findAllByUsuario(){
+        return crudRepository.findAllByUsuario();
+    }*/
+    public Profesional getOneByUsuario(int usuarioId){
+        return crudRepository.findOneByIdUsuario(usuarioId);
+    }
 }

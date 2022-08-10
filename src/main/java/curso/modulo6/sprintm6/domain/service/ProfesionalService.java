@@ -35,4 +35,11 @@ public class ProfesionalService {
             return true;
         }).orElse(false);
     }
+    /*public Profesional findAllByUsuario(){
+        return repository.findAllByUsuario();
+    }*/
+
+    public Profesional getOneByUsuario(int usuarioId){
+        return repository.getOneByUsuario(usuarioId);
+    }
 }

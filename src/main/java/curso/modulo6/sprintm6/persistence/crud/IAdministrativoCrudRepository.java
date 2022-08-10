@@ -9,4 +9,6 @@ import org.springframework.data.repository.CrudRepository;
  * @author Sergio Teran on 09-08-2022
  */
 public interface IAdministrativoCrudRepository extends CrudRepository<Administrativo, Integer>{
+
+    public Administrativo findOneByIdUsuario(int usuarioId);
 }

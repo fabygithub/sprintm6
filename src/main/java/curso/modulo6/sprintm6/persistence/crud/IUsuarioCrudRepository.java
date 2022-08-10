@@ -17,4 +17,6 @@ public interface IUsuarioCrudRepository extends CrudRepository<Usuario, Integer>
 
     @Query("select max(usuarioId) from Usuario")
     public Integer maxId();
+
+
 }

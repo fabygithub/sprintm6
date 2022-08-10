@@ -146,6 +146,22 @@ public class Cliente {
         this.idUsuario = idUsuario;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "idCliente=" + idCliente +
+                ", rut=" + rut +
+                ", nombres='" + nombres + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", afp='" + afp + '\'' +
+                ", sistemaSalud='" + sistemaSalud + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", comuna='" + comuna + '\'' +
+                ", edad=" + edad +
+                ", idUsuario=" + idUsuario +
+                '}';
+    }
 //    public Usuario getUsuario() {
 //        return usuario;
 //    }

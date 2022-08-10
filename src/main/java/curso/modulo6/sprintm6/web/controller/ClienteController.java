@@ -1,8 +1,8 @@
 package curso.modulo6.sprintm6.web.controller;
 
-import curso.modulo6.sprintm6.domain.service.ProfesionalService;
+import curso.modulo6.sprintm6.domain.service.ClienteService;
 import curso.modulo6.sprintm6.domain.service.UsuarioService;
-import curso.modulo6.sprintm6.persistence.entity.Profesional;
+import curso.modulo6.sprintm6.persistence.entity.Cliente;
 import curso.modulo6.sprintm6.persistence.entity.Usuario;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -13,45 +13,37 @@ import org.springframework.web.bind.annotation.*;
 /**
  * curso.modulo6.sprintm6.web.controller
  *
- * @author Sergio Teran on 09-08-2022
+ * @author Sergio Teran on 10-08-2022
  */
 
 @Controller
-@RequestMapping("/profesional")
-public class ProfesionalController {
+@RequestMapping("/cliente")
+public class ClienteController {
 
     Log logger = LogFactory.getLog(InicioController.class);
 
-    private final ProfesionalService service;
+    private final ClienteService service;
     private final UsuarioService uService;
 
-
-    public ProfesionalController(ProfesionalService service, UsuarioService uService) {
+    public ClienteController(ClienteService service, UsuarioService uService) {
         this.service = service;
         this.uService = uService;
     }
 
-    @GetMapping("/listar")
-    public String profesionalList(Model model){
-        model.addAttribute("profesional", service.getAll());
-        return "profesionalList";
-    }
-
     @GetMapping("/edit/{usuarioId}")
-    public String profesionalEdit(@PathVariable("usuarioId") int usuarioId, Model model){
+    public String clienteEdit(@PathVariable("usuarioId") int usuarioId, Model model){
         Usuario u = new Usuario();
         u = uService.getOne(usuarioId).orElse(null);
         model.addAttribute("nombreUsuario", u.getUsuarioNombre());
         model.addAttribute("fechaNacimiento", u.getUsuarioFechaNac());
-        model.addAttribute("profesional", service.getOneByUsuario(usuarioId));
-        return "profesionalEdit";
+        model.addAttribute("cliente", service.getOneByIdUsuario(usuarioId));
+        return "clienteEdit";
     }
 
-    @PostMapping("/save")
-    public String profesionalSave(@ModelAttribute Profesional profesional){
-        service.save(profesional);
+    @PostMapping("save")
+    public String clienteSave(@ModelAttribute Cliente cliente){
+        logger.warn(cliente.toString());
+        service.save(cliente);
         return "redirect:/usuario/listar";
     }
-
-
 }

@@ -27,6 +27,10 @@ public class Profesional {
     @JoinColumn(name = "usuario_id_usuario", insertable = false, updatable = false)
     private Usuario usuario;
 
+    private String uNombre;
+    private String uFecha;
+
+
     public Profesional() {
     }
 
@@ -75,5 +79,20 @@ public class Profesional {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+    public String getuNombre() {
+        return uNombre;
+    }
+
+    public void setuNombre(String uNombre) {
+        this.uNombre = uNombre;
+    }
+
+    public String getuFecha() {
+        return uFecha;
+    }
+
+    public void setuFecha(String uFecha) {
+        this.uFecha = uFecha;
     }
 }

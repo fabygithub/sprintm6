@@ -9,4 +9,6 @@ import org.springframework.data.repository.CrudRepository;
  * @author Sergio Teran on 09-08-2022
  */
 public interface IClienteCrudRepository extends CrudRepository<Cliente, Integer> {
+
+    public Cliente findOneByIdUsuario(int usuarioId);
 }

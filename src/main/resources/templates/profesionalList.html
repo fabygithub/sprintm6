@@ -36,28 +36,19 @@
             </tr>
             </thead>
             <tbody>
-                <tr th:each="usuario: ${usuarios}">
-                    <td th:text="${usuario.getUsuarioId()}"></td>
-                    <td th:name="nombre" th:text="${usuario.getUsuarioNombre()}"></td>
-                    <td th:text="${usuario.getUsuarioFechaNac()}"></td>
-                    <td th:switch="${usuario.getUsuarioTipo()}" >
-                        <span th:case="'1'" th:value="${1}">Cliente</span>
+                <tr th:each="profesional: ${profesional}">
+                    <td th:text="${profesional.getId()}"></td>
+                    <td th:text="${profesional.getTitulo()}"></td>
+                    <td th:text="${profesional.getIdUsuario()}"></td>
+                    <td th:switch="${profesional.getTitulo()}" >
+                        <!--span th:case="'1'" th:value="${1}">Cliente</span>
                         <span th:case="'2'" th:value="${2}">Profesional</span>
-                        <span th:case="'3'" th:value="${3}">Administrativo</span>
+                        <span th:case="'3'" th:value="${3}">Administrativo</span-->
                     </td>
                     <td>
-                        <span th:if="${usuario.getUsuarioTipo() == 1}">
-                            <a th:href="@{/cliente/edit/{id}(id=${usuario.getUsuarioId()})}">
-                            <i class="fa-solid fa-square-pen"></i></a>
-                        </span>
-                        <span th:if="${usuario.getUsuarioTipo() == 2}">
-                            <a th:href="@{/profesional/edit/{id}(id=${usuario.getUsuarioId()})}">
-                            <i class="fa-solid fa-square-pen"></i></a>
-                        </span>
-                        <span th:if="${usuario.getUsuarioTipo() == 3}">
-                            <a th:href="@{/administrativo/edit/{id}(id=${usuario.getUsuarioId()})}">
-                            <i class="fa-solid fa-square-pen"></i></a>
-                        </span>
+                        <a th:href="@{/profesional/edit/{id}(id=${value})}">
+                            <i class="fa-solid fa-square-pen"></i>
+                        </a>
                         <!--a th:href="@{/usuario/del/{id}(id=${usuario.getUsuarioId()})}">
                             <i class="fa-solid fa-trash-can"></i>
                         </a-->
