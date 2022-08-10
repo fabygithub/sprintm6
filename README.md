@@ -8,3 +8,9 @@ Para este proyecto se ha desarrollado una aplicación en java que permite gestio
 
 Para este proyecto tambien se maneja sesiones de usuario.
 
+
+Repositorios:
+Sergio Terán: 
+https://github.com/stzupa/sprintM6.git
+Fabiola Díaz:
+https://github.com/fabyDiaz/SprintM6.git
