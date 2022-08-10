@@ -20,6 +20,8 @@ public class AdministrativoRepository {
     }
 
     public Administrativo save(Administrativo administrativo){
+
         return crudRepository.save(administrativo);
     }
+
 }
