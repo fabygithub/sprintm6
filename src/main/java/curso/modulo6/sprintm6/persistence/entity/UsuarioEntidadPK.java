@@ -17,4 +17,25 @@ public class UsuarioEntidadPK implements Serializable {
     private Integer usuarioId;
     @Column(name = "id_entidad")
     private Integer entidadId;
+
+    public Integer getUsuarioId() {
+        return usuarioId;
+    }
+
+    public void setUsuarioId(Integer usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+
+    public Integer getEntidadId() {
+        return entidadId;
+    }
+
+    public void setEntidadId(Integer entidadId) {
+        this.entidadId = entidadId;
+    }
+
+    public UsuarioEntidadPK(Integer usuarioId, Integer entidadId) {
+        this.usuarioId = usuarioId;
+        this.entidadId = entidadId;
+    }
 }

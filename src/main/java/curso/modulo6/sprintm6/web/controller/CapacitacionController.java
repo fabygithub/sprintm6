@@ -1,6 +1,6 @@
 package curso.modulo6.sprintm6.web.controller;
 
-import curso.modulo6.sprintm6.domain.service.CapacitacionService;
+import curso.modulo6.sprintm6.modelo.domain.service.CapacitacionService;
 import curso.modulo6.sprintm6.persistence.entity.Capacitacion;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

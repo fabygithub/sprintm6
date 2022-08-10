@@ -1,7 +1,7 @@
 package curso.modulo6.sprintm6.web.controller;
 
-import curso.modulo6.sprintm6.domain.service.ProfesionalService;
-import curso.modulo6.sprintm6.domain.service.UsuarioService;
+import curso.modulo6.sprintm6.modelo.domain.service.ProfesionalService;
+import curso.modulo6.sprintm6.modelo.domain.service.UsuarioService;
 import curso.modulo6.sprintm6.persistence.entity.Profesional;
 import curso.modulo6.sprintm6.persistence.entity.Usuario;
 import org.springframework.stereotype.Controller;

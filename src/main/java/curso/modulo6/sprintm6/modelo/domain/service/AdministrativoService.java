@@ -1,4 +1,4 @@
-package curso.modulo6.sprintm6.domain.service;
+package curso.modulo6.sprintm6.modelo.domain.service;
 
 import curso.modulo6.sprintm6.persistence.entity.Administrativo;
 import curso.modulo6.sprintm6.persistence.repository.AdministrativoRepository;

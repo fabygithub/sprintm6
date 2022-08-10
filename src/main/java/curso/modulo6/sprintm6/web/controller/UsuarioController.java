@@ -1,9 +1,9 @@
 package curso.modulo6.sprintm6.web.controller;
 
-import curso.modulo6.sprintm6.domain.service.AdministrativoService;
-import curso.modulo6.sprintm6.domain.service.ClienteService;
-import curso.modulo6.sprintm6.domain.service.ProfesionalService;
-import curso.modulo6.sprintm6.domain.service.UsuarioService;
+import curso.modulo6.sprintm6.modelo.domain.service.AdministrativoService;
+import curso.modulo6.sprintm6.modelo.domain.service.ClienteService;
+import curso.modulo6.sprintm6.modelo.domain.service.ProfesionalService;
+import curso.modulo6.sprintm6.modelo.domain.service.UsuarioService;
 import curso.modulo6.sprintm6.persistence.entity.Administrativo;
 import curso.modulo6.sprintm6.persistence.entity.Cliente;
 import curso.modulo6.sprintm6.persistence.entity.Profesional;
