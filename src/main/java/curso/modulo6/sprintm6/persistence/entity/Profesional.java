@@ -23,12 +23,12 @@ public class Profesional {
     @Column(name = "usuario_id_usuario")
     private Integer idUsuario;
 
-    @ManyToOne
+    /*@ManyToOne
     @JoinColumn(name = "usuario_id_usuario", insertable = false, updatable = false)
     private Usuario usuario;
 
     private String uNombre;
-    private String uFecha;
+    private String uFecha;*/
 
 
     public Profesional() {
@@ -39,7 +39,7 @@ public class Profesional {
         this.titulo = titulo;
         this.fecha = fecha;
         this.idUsuario = idUsuario;
-        this.usuario = usuario;
+        //this.usuario = usuario;
     }
 
     public Integer getId() {
@@ -73,7 +73,7 @@ public class Profesional {
     public void setIdUsuario(Integer idUsuario) {
         this.idUsuario = idUsuario;
     }
-    public Usuario getUsuario() {
+    /*public Usuario getUsuario() {
         return usuario;
     }
 
@@ -94,5 +94,5 @@ public class Profesional {
 
     public void setuFecha(String uFecha) {
         this.uFecha = uFecha;
-    }
+    }*/
 }
