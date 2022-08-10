@@ -1,6 +1,8 @@
 package curso.modulo6.sprintm6.persistence.repository;
 
 import curso.modulo6.sprintm6.persistence.crud.IClienteCrudRepository;
+import curso.modulo6.sprintm6.persistence.entity.Capacitacion;
+import curso.modulo6.sprintm6.persistence.entity.Cliente;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -16,5 +18,9 @@ public class ClienteRepository {
 
     public ClienteRepository(IClienteCrudRepository crudRepository) {
         this.crudRepository = crudRepository;
+    }
+
+    public Cliente save(Cliente cap){
+        return crudRepository.save(cap);
     }
 }

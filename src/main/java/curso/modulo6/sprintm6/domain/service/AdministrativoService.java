@@ -1,5 +1,6 @@
 package curso.modulo6.sprintm6.domain.service;
 
+import curso.modulo6.sprintm6.persistence.entity.Administrativo;
 import curso.modulo6.sprintm6.persistence.repository.AdministrativoRepository;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +17,9 @@ public class AdministrativoService {
 
     public AdministrativoService(AdministrativoRepository repository) {
         this.repository = repository;
+    }
+
+    public Administrativo save(Administrativo administrativo){
+        return repository.save(administrativo);
     }
 }

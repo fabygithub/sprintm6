@@ -1,6 +1,7 @@
 package curso.modulo6.sprintm6.persistence.repository;
 
 import curso.modulo6.sprintm6.persistence.crud.IAdministrativoCrudRepository;
+import curso.modulo6.sprintm6.persistence.entity.Administrativo;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -16,5 +17,9 @@ public class AdministrativoRepository {
 
     public AdministrativoRepository(IAdministrativoCrudRepository crudRepository) {
         this.crudRepository = crudRepository;
+    }
+
+    public Administrativo save(Administrativo administrativo){
+        return crudRepository.save(administrativo);
     }
 }

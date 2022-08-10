@@ -22,19 +22,19 @@ public class Administrativo {
     private String experiencia;
     @Column(name = "usuario_id_usuario")
     private Integer idUsuario;
-    @ManyToOne
-    @JoinColumn(name = "usuario_id_usuario", insertable = false, nullable = false)
-    private Usuario usuario;
+//    @ManyToOne
+//    @JoinColumn(name = "usuario_id_usuario", insertable = false, nullable = false)
+//    private Usuario usuario;
 
     public Administrativo() {
     }
 
-    public Administrativo(Integer idAdmin, String area, String experiencia, Integer idUsuario, Usuario usuario) {
+    public Administrativo(Integer idAdmin, String area, String experiencia, Integer idUsuario/*, Usuario usuario*/) {
         this.idAdmin = idAdmin;
         this.area = area;
         this.experiencia = experiencia;
         this.idUsuario = idUsuario;
-        this.usuario = usuario;
+        //this.usuario = usuario;
     }
 
     public Integer getIdAdmin() {
@@ -69,11 +69,11 @@ public class Administrativo {
         this.idUsuario = idUsuario;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
+//    public Usuario getUsuario() {
+//        return usuario;
+//    }
+//
+//    public void setUsuario(Usuario usuario) {
+//        this.usuario = usuario;
+//    }
 }

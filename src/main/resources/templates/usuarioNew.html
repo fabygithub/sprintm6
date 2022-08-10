@@ -88,18 +88,19 @@
                 <!-- Campos CLIENTES ------------------------------------------------------------------------------------------->
 
                 <div id="camposCliente">
+                    <input type="hidden" class="form-control" id="tipoCl" name="tipoCl" value="1">
+                    <input type="hidden" class="form-control" id="idCl" name="idCl" value="0">
                     <div id="nombreCli" class="col-4">
                         <label for="nombres" class="form-label">Nombres</label>
                         <input type="text" class="form-control"	id="nombres" name="nombres">
                     </div>
-
                     <div id="apellidoCli" class="col-4">
                         <label for="apellidos" class="form-label">Apellidos</label>
                         <input type="text" class="form-control"	id="apellidos" name="apellidos">
                     </div>
                     <div class="col-4">
                         <label for="rut" class="form-label">Rut</label>
-                        <input type="text" class="form-control"	id="rut">
+                        <input type="text" class="form-control"	id="rut" name="rut">
                     </div>
                     <div id="telefonoCli" class="col-4">
                         <label for="telefono" class="form-label">Teléfono</label>
@@ -131,7 +132,7 @@
                 <!-- Campos PROFESIONAL ------------------------------------------------------------------------------------>
 
                 <div id="camposProfesional">
-                    <input type="hidden" class="form-control" id="tipo" name="tipo" value="2">
+                    <input type="hidden" class="form-control" id="tipo" name="tipoProf" value="2">
                     <input type="hidden" class="form-control" id="idProf" name="idProf" value="0">
                     <div id="tituloPro" class="col-4">
                         <label for="titulo" class="form-label">Título</label>
@@ -147,6 +148,8 @@
                 <!-- Campos ADMINISTRATIVO -------------------------------------------------------------------------------->
 
                 <div id="camposAdministrativo">
+                    <input type="hidden" class="form-control" id="tipoAdm" name="tipoAdm" value="3">
+                    <input type="hidden" class="form-control" id="idAdm" name="idAdm" value="0">
                     <div id="areaAdmin" class="col-4">
                         <label for="area" class="form-label">Area</label>
                         <input type="text" class="form-control"	id="area" name="area">

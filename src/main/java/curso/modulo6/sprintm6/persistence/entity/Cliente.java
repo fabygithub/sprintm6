@@ -33,17 +33,17 @@ public class Cliente {
     @Column(name = "comuna_cliente")
     private String comuna;
     @Column(name = "edad_cliente")
-    private String edad;
+    private Integer edad;
     @Column(name = "usuario_id_usuario")
     private Integer idUsuario;
-    @ManyToOne
-    @JoinColumn(name = "usuario_id_usuario", insertable = false, nullable = false)
-    private Usuario usuario;
+//    @ManyToOne
+//    @JoinColumn(name = "usuario_id_usuario", insertable = false, nullable = false)
+//    private Usuario usuario;
 
     public Cliente() {
     }
 
-    public Cliente(Integer idCliente, Integer rut, String nombres, String apellidos, String telefono, String afp, String sistemaSalud, String direccion, String comuna, String edad, Integer idUsuario, Usuario usuario) {
+    public Cliente(Integer idCliente, Integer rut, String nombres, String apellidos, String telefono, String afp, String sistemaSalud, String direccion, String comuna, Integer edad, Integer idUsuario/*Usuario usuario*/) {
         this.idCliente = idCliente;
         this.rut = rut;
         this.nombres = nombres;
@@ -55,7 +55,7 @@ public class Cliente {
         this.comuna = comuna;
         this.edad = edad;
         this.idUsuario = idUsuario;
-        this.usuario = usuario;
+        //this.usuario = usuario;
     }
 
     public Integer getIdCliente() {
@@ -130,11 +130,11 @@ public class Cliente {
         this.comuna = comuna;
     }
 
-    public String getEdad() {
+    public Integer getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(Integer edad) {
         this.edad = edad;
     }
 
@@ -146,11 +146,11 @@ public class Cliente {
         this.idUsuario = idUsuario;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
+//    public Usuario getUsuario() {
+//        return usuario;
+//    }
+//
+//    public void setUsuario(Usuario usuario) {
+//        this.usuario = usuario;
+//    }
 }

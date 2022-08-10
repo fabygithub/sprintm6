@@ -1,5 +1,6 @@
 package curso.modulo6.sprintm6.domain.service;
 
+import curso.modulo6.sprintm6.persistence.entity.Cliente;
 import curso.modulo6.sprintm6.persistence.repository.ClienteRepository;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +17,9 @@ public class ClienteService {
 
     public ClienteService(ClienteRepository repository) {
         this.repository = repository;
+    }
+
+    public Cliente save(Cliente cliente){
+        return repository.save(cliente);
     }
 }
