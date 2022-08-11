@@ -8,11 +8,11 @@
         <version>2.7.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cl.awakelab</groupId>
-    <artifactId>matricula</artifactId>
+    <groupId>curso.modulo6</groupId>
+    <artifactId>sprintM6</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>matricula</name>
-    <description>Sistema de Matriculas para AWL</description>
+    <name>sprintM6</name>
+    <description>sprintM6</description>
     <properties>
         <java.version>17</java.version>
         <org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
