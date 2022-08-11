@@ -96,6 +96,6 @@ public class UsuarioController {
             cliente.setIdUsuario(service.maxId());
             cService.save(cliente);
         }
-        return "inicio";
+        return "redirect:/usuario/listar";
     }
 }

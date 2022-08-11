@@ -16,6 +16,3 @@ Fabiola Díaz:
 https://github.com/fabyDiaz/SprintM6.git
 
 
-SQL
-
-[Dump20220810.txt](https://github.com/stzupa/sprintM6/files/9305102/Dump20220810.txt)
