@@ -2,7 +2,7 @@ package curso.modulo6.sprintm6.modelo.domain.dto;
 
 import java.util.List;
 
-public class UsuarioEntidadDTO {
+public class UsuarioEntidadDTO  {
 
     private String username;
     private String password;
